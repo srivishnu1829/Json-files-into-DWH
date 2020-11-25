@@ -1,0 +1,13 @@
+- source_file_prefix: test_logs/withnew_column.json
+  source_file_columns: ['_id', 'partyId', 'timeCreated.$date','status','timeLastChanged.$date','name','newcolumn','blockReason']
+  target_db_url: 'jdbc:mysql://cp-prod-dwh-rds-aurora-master.6/cpdb'
+  target_table_name: Contractnew1
+  target_db_user_name: admin
+  target_db_password: 99877876557778
+  
+- source_file_prefix: test_logs/withnew_column.json
+  source_file_columns: ['_id', 'partyId', 'status', 'name', 'newcolumn']
+  target_db_url: 'jdbc:mysql://cp-prod-dwh-rds-aurora3306/cpdb'
+  target_table_name: Contractnew
+  target_db_user_name: adminis
+  target_db_password: mnvccfdtuyy
